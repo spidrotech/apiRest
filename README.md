@@ -1,5 +1,11 @@
 # apiRest
 
+# create database
+php bin/console doctrine:database:create
+
+# create entities 
+php bin/console doctrine:schema:create
+
 # run the app : 
 php bin/console server:run
 
