@@ -1,11 +1,22 @@
 # apiRest
-FOR DOCUMENTATION :
+
+# run the app : 
+php bin/console server:run
+
+# FOR DOCUMENTATION :
 http://127.0.0.1:8000/api/doc
 
-FOR API : 
+# FOR API : 
 http://127.0.0.1:8000/api/
 
-FOR ADMIN / 
+# FOR ADMIN : 
 http://127.0.0.1:8000/admin
 
-we want volunteers to build this website, contact me on: amrihafedh [at] yahoo [dot] fr
+# install the app in local :
+docker-compose up -d
+
+# access the local 
+127.0.0.1:8083/
+
+# we want volunteers to build this website, contact me on: amrihafedh [at] yahoo [dot] fr
+
