@@ -19,6 +19,7 @@
         "symfony/monolog-bundle": "^3.3",
         "symfony/orm-pack": "^1.0",
         "symfony/security-csrf": "*",
+        "symfony/twig-bundle": "*",
         "symfony/validator": "*",
         "symfony/yaml": "*"
     },

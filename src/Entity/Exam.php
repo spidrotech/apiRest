@@ -4,8 +4,10 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+use Swagger\Annotations as SWG;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ExamRepository")
+ * @SWG\Definition()
  */
 class Exam
 {
@@ -13,6 +15,7 @@ class Exam
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     * @SWG\Property()
      */
     private $id;
 

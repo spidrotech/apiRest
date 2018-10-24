@@ -8,15 +8,33 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use FOS\RestBundle\Controller\Annotations as Rest; // alias pour toutes les annotations
 use FOS\RestBundle\View\View; // Utilisation de la vue de FOSRestBundle
+
 use Nelmio\ApiDocBundle\Annotation\Model;
-use Nelmio\ApiDocBundle\Annotation\Security;
 use Swagger\Annotations as SWG;
+use Nelmio\ApiDocBundle\Annotation\Security;
 
 class ExamController extends Controller {
 
     /**
      * @Rest\View()
      * @Rest\Get("/api/exam", name="app_api_exams")
+     * @SWG\Get(
+     *     path="/exam",
+     *     summary="Get movies",
+     *     description="Get movies",
+     *     produces={"application/json"},
+     *     @SWG\Parameter(
+     *         name="request",
+     *         in="query",
+     *         description="Request request",
+     *         type="string",
+     *     ),
+     *     @SWG\Response(
+     *         response=200,
+     *         description="Success",
+     *         @SWG\Schema(ref="App/Entitiy/Exam"),
+     *     )
+     * )
      */
     public function getExamsAction(Request $request) {
         $em = $this->getDoctrine()->getManager();
