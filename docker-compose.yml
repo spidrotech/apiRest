@@ -37,7 +37,7 @@ services:
     depends_on:
       - php
     ports:
-      - 8083:80
+      - 8086:80
     
   php:
     restart: unless-stopped
