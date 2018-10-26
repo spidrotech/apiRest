@@ -11,3 +11,4 @@
 ###< symfony/web-server-bundle ###
 /nbproject/
 /nbproject/*
+nbproject/private/private.xml
