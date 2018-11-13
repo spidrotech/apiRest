@@ -18,18 +18,20 @@ php bin/console doctrine:database:create
 ```
 php bin/console doctrine:schema:create
 ```
+## vHost url : 
+127.0.0.1   apiRest.localhost
 
 ## access the local 
-http://127.0.0.1:8083/
+apiRest.localhost
 
 ## API Documentation :
-http://127.0.0.1:8083/api/doc
+apiRest.localhost/api/doc
 
 ## API index : 
-http://127.0.0.1:8083/api/
+apiRest.localhost/api/
 
 ## Admin access : 
-http://127.0.0.1:8083/admin
+apiRest.localhost/admin
 
 ## kibana path : 
 http://localhost:5601 
