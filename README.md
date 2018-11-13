@@ -39,6 +39,12 @@ http://localhost:5601
 php bin/console server:run
 ```
 
+##utils commands : 
+###for composer :
+COMPOSER_MEMORY_LIMIT=-1 composer.phar <...>
+###for php : 
+php -d memory_limit=-1
+
 ## we want volunteers to build this website, contact me at: 
 amrihafedh [at] yahoo [dot] fr
 
