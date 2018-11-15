@@ -47,6 +47,9 @@ COMPOSER_MEMORY_LIMIT=-1 composer.phar <...>
 ###for php : 
 php -d memory_limit=-1
 
+## docker mount pb
+export COMPOSE_CONVERT_WINDOWS_PATHS=1
+
 ## we want volunteers to build this website, contact me at: 
 amrihafedh [at] yahoo [dot] fr
 
