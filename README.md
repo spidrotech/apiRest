@@ -18,6 +18,12 @@ php bin/console doctrine:database:create
 ```
 php bin/console doctrine:schema:create
 ```
+
+## Or only update db 
+```
+php bin/console doctrine:schema:update --force
+```
+
 ## vHost url : 
 127.0.0.1   apiRest.localhost
 
@@ -40,16 +46,16 @@ http://localhost:5601
 ```
 php bin/console server:run
 ```
-
-##utils commands : 
-###for composer :
-COMPOSER_MEMORY_LIMIT=-1 composer.phar <...>
-###for php : 
-php -d memory_limit=-1
-
-## docker mount pb
-export COMPOSE_CONVERT_WINDOWS_PATHS=1
-
-## we want volunteers to build this website, contact me at: 
-amrihafedh [at] yahoo [dot] fr
+__
+##utils commands : __
+###for composer :__
+COMPOSER_MEMORY_LIMIT=-1 composer.phar <...>__
+###for php : __
+php -d memory_limit=-1__
+__
+## docker mount pb__
+export COMPOSE_CONVERT_WINDOWS_PATHS=1__
+__
+## we want volunteers to build this website, contact me at: __
+amrihafedh [at] yahoo [dot] fr__
 
