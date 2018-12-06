@@ -37,7 +37,7 @@ services:
     depends_on:
       - php
     ports:
-      - 80:80
+      - 8081:80
 
   php:
     restart: unless-stopped
@@ -55,32 +55,32 @@ services:
         max-file: "5"
     depends_on:
       - mysql
-#
-#  elasticsearch:
-#      image: elasticsearch:2.1.1
-#      volumes:
-#              - /srv/elasticsearch/data:/usr/share/elasticsearch/data
-#      ports:
-#              - "9200:9200"
-#
-#  logstash:
-#      image: logstash:2.1.1
-#      environment:
-#              TZ: Europe/Paris
-#      expose:
-#              - "12201"
-#      ports:
-#              - "12201:12201"
-#              - "12201:12201/udp"
-#      volumes:
-#              - ./conf:/conf
-#      links:
-#              - elasticsearch:elasticsearch
-#      command: logstash -f /conf/gelf.conf
-#
-#  kibana:
-#      image: kibana:4.3
-#      links:
-#              - elasticsearch:elasticsearch
-#      ports:
-#              - "5601:5601"
+
+  elasticsearch:
+      image: elasticsearch:2.1.1
+      volumes:
+              - /srv/elasticsearch/data:/usr/share/elasticsearch/data
+      ports:
+              - "9200:9200"
+
+  logstash:
+      image: logstash:2.1.1
+      environment:
+              TZ: Europe/Paris
+      expose:
+              - "12201"
+      ports:
+              - "12201:12201"
+              - "12201:12201/udp"
+      volumes:
+              - ./conf:/conf
+      links:
+              - elasticsearch:elasticsearch
+      command: logstash -f /conf/gelf.conf
+
+  kibana:
+      image: kibana:4.3
+      links:
+              - elasticsearch:elasticsearch
+      ports:
+              - "5601:5601"
