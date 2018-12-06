@@ -46,16 +46,16 @@ http://localhost:5601
 ```
 php bin/console server:run
 ```
-__
-##utils commands : __
-###for composer :__
-COMPOSER_MEMORY_LIMIT=-1 composer.phar <...>__
-###for php : __
-php -d memory_limit=-1__
-__
-## docker mount pb__
-export COMPOSE_CONVERT_WINDOWS_PATHS=1__
-__
-## we want volunteers to build this website, contact me at: __
-amrihafedh [at] yahoo [dot] fr__
+
+##utils commands : <br/>
+###for composer : <br/>
+COMPOSER_MEMORY_LIMIT=-1 composer.phar <...><br/>
+###for php : <br/>
+php -d memory_limit=-1<br/>
+<br/>
+## docker mount pb<br/>
+export COMPOSE_CONVERT_WINDOWS_PATHS=1<br/>
+<br/>
+## we want volunteers to build this website, contact me at: <br/>
+amrihafedh [at] yahoo [dot] fr<br/>
 
