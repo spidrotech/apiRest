@@ -14,11 +14,6 @@ docker-compose up -d
 php bin/console doctrine:database:create
 ```
 
-## create entities 
-```
-php bin/console doctrine:schema:create
-```
-
 ## Or only update db 
 ```
 php bin/console doctrine:schema:update --force
@@ -47,15 +42,15 @@ http://localhost:5601
 php bin/console server:run
 ```
 
-##utils commands : <br/>
-###for composer : <br/>
+## utils commands : <br/>
+### for composer : <br/>
 COMPOSER_MEMORY_LIMIT=-1 composer.phar <...><br/>
-###for php : <br/>
+### for php : <br/>
 php -d memory_limit=-1<br/>
 <br/>
-## docker mount pb<br/>
+### docker mount pb<br/>
 export COMPOSE_CONVERT_WINDOWS_PATHS=1<br/>
 <br/>
-## we want volunteers to build this website, contact me at: <br/>
+#### we want volunteers to build this website, contact me at: <br/>
 amrihafedh [at] yahoo [dot] fr<br/>
 
