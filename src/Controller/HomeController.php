@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use FOS\RestBundle\Controller\Annotations as Rest; // alias pour toutes les annotations
@@ -12,7 +12,7 @@ use Swagger\Annotations as SWG;
 use Nelmio\ApiDocBundle\Annotation\Security;
 use App\Service\MessageGenerator;
 
-class HomeController extends Controller {
+class HomeController extends AbstractController {
 
     /**
      *
